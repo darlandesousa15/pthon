@@ -12,3 +12,4 @@ if (chute == numero_chutado):
     print("*********************************")
 else:
     print("Você errou :(")
+print("Jogo encerrado")
