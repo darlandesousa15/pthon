@@ -4,12 +4,22 @@ print("*********************************")
 numero_chutado = 43
 
 chutando = input("Qual o valor do seu chute ? ")
+#O input é a mesma coisa que o prompt
 print("Você chutou: ", chutando)
-chute = int(chutando)
-if (chute == numero_chutado):
+
+chute   = int(chutando)
+maior   = chute > numero_chutado
+menor   = chute < numero_chutado
+acertou = chute == numero_chutado
+
+if (acertou):
     print("*********************************")
     print("**** Você acertou!  PARABÉNS ****")
     print("*********************************")
 else:
-    print("Você errou :(")
+    if (maior):
+        print("Você errou! O seu chute é maior que o numero sorteado")
+    elif (menor):
+        print("Você errou! O seu chute é menor que o numero sorteado")
+
 print("Jogo encerrado")
