@@ -3,12 +3,13 @@ print("Bem vindo ao jogo, vamos jogar ?!")
 print("*********************************")
 numero_chutado = 43
 tentativas = 3
+rodadas = 1
 
-while (tentativas > 0):
+while (rodadas <= tentativas):
 
     chutando = input("Qual o valor do seu chute ? ")
     # O input é a mesma coisa que o prompt
-    print("Número de tentativas: ", tentativas)
+    print("Rodada ",rodadas , "de ", tentativas)
     print("Você chutou: ", chutando)
 
     chute   = int(chutando)
@@ -27,6 +28,6 @@ while (tentativas > 0):
         elif menor:
             print("Você errou! O seu chute é menor que o numero sorteado")
             print("*****************************************************")
-    tentativas = tentativas - 1
+    rodadas = rodadas + 1
 
 print("Jogo encerrado")
