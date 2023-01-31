@@ -10,8 +10,9 @@ for rodadas in range (rodadas, tentativas + 1):
 # O while e o incrementador de rodadas está comentado para utilizar o for
 # for ... in range (..., ...): no lugar dos ... utilizar as variaveis e dentro do parenteses vc pode
 # implementar 1 ou subtrair pois o valor final dentro dele é escluido por exemplo o valor final de tentativa é 3 então o 3 ñ vai fazer parte do loop por isso foi incrementado 1 para ficar 3 repetições e a 4 ser excluida
+# for in range(start, stop, [step]) exemplificando os detalhes do for
 
-    chutando = input("Qual o valor do seu chute ? ")
+    chutando = input("Qual o valor do seu chute ? Deve ser entre 1 e 100 ")
     # O input é a mesma coisa que o prompt
     print("Rodada  {} de  {}".format(rodadas, tentativas))
     # Aqui estamos usando a função interpolada onde usamos os {} para colocar um valor dentro
@@ -24,11 +25,17 @@ for rodadas in range (rodadas, tentativas + 1):
     menor   = chute < numero_chutado
     acertou = chute == numero_chutado
 
+    if (chute < 1 or chute > 100):
+        print("Valor incorreto, digite um chute entre 1 e 100")
+        print("**********************************************")
+        continue
+
     if (acertou):
     # Possui a opção de digitar os if e else elif sem usar os (), tanot que foi utilizado os dois modelos para relembrar essa informação
         print("*********************************")
         print("**** Você acertou!  PARABÉNS ****")
         print("*********************************")
+        break
     else:
         if maior:
             print("Você errou! O seu chute é maior que o numero sorteado")
