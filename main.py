@@ -5,7 +5,11 @@ numero_chutado = 43
 tentativas = 3
 rodadas = 1
 
-while (rodadas <= tentativas):
+# while (rodadas <= tentativas):
+for rodadas in range (rodadas, tentativas + 1):
+# O while e o incrementador de rodadas está comentado para utilizar o for
+# for ... in range (..., ...): no lugar dos ... utilizar as variaveis e dentro do parenteses vc pode
+# implementar 1 ou subtrair pois o valor final dentro dele é escluido por exemplo o valor final de tentativa é 3 então o 3 ñ vai fazer parte do loop por isso foi incrementado 1 para ficar 3 repetições e a 4 ser excluida
 
     chutando = input("Qual o valor do seu chute ? ")
     # O input é a mesma coisa que o prompt
@@ -31,6 +35,6 @@ while (rodadas <= tentativas):
         elif menor:
             print("Você errou! O seu chute é menor que o numero sorteado")
             print("*****************************************************")
-    rodadas = rodadas + 1
+    # rodadas = rodadas + 1
 
 print("Jogo encerrado")
