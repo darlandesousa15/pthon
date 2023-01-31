@@ -9,7 +9,10 @@ while (rodadas <= tentativas):
 
     chutando = input("Qual o valor do seu chute ? ")
     # O input é a mesma coisa que o prompt
-    print("Rodada ",rodadas , "de ", tentativas)
+    print("Rodada  {} de  {}".format(rodadas, tentativas))
+    # Aqui estamos usando a função interpolada onde usamos os {} para colocar um valor dentro
+    # e para que esse valor seja inserido usamos o .format() e dentro dele colocamos os valores que queremos
+    # que apareça, deixando o código mais organizado e limpo.
     print("Você chutou: ", chutando)
 
     chute   = int(chutando)
