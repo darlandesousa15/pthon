@@ -5,7 +5,7 @@ import random
 numero_random = random.random() * 100
 # o random.random é para gerar um numero aleatório
 numero_chutado = round(numero_random)
-tentativas = 5
+tentativas = 8
 rodadas = 1
 
 # while (rodadas <= tentativas):
