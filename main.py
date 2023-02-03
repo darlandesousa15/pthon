@@ -31,7 +31,7 @@ for rodadas in range (rodadas, tentativas + 1):
         continue
 
     if (acertou):
-    # Possui a opção de digitar os if e else elif sem usar os (), tanot que foi utilizado os dois modelos para relembrar essa informação
+    # Possui a opção de digitar os if e else elif sem usar os (), tanto que foi utilizado os dois modelos para relembrar essa informação
         print("*********************************")
         print("**** Você acertou!  PARABÉNS ****")
         print("*********************************")
