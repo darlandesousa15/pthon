@@ -1,10 +1,11 @@
 print("*********************************")
 print("Bem vindo ao jogo, vamos jogar ?!")
 print("*********************************")
+import random
 numero_random = random.random() * 100
 # o random.random é para gerar um numero aleatório
 numero_chutado = round(numero_random)
-tentativas = 3
+tentativas = 5
 rodadas = 1
 
 # while (rodadas <= tentativas):
@@ -47,4 +48,4 @@ for rodadas in range (rodadas, tentativas + 1):
             print("*****************************************************")
     # rodadas = rodadas + 1
 
-print("Jogo encerrado")
+print("Jogo encerrado o número sorteado foi ", numero_chutado)
