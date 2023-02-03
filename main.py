@@ -1,7 +1,9 @@
 print("*********************************")
 print("Bem vindo ao jogo, vamos jogar ?!")
 print("*********************************")
-numero_chutado = 43
+numero_random = random.random() * 100
+# o random.random é para gerar um numero aleatório
+numero_chutado = round(numero_random)
 tentativas = 3
 rodadas = 1
 
@@ -24,6 +26,7 @@ for rodadas in range (rodadas, tentativas + 1):
     maior   = chute > numero_chutado
     menor   = chute < numero_chutado
     acertou = chute == numero_chutado
+
 
     if (chute < 1 or chute > 100):
         print("Valor incorreto, digite um chute entre 1 e 100")
