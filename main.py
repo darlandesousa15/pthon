@@ -5,8 +5,7 @@ print("*********************************")
 print("Bem vindo ao jogo, vamos jogar ?!")
 print("*********************************")
 
-numero_random = random.random() * 100
-numero_chutado = round(numero_random)
+numero_chutado = round(random.random() * 100)
 tentativas = 8
 rodadas = 1
 
@@ -38,15 +37,17 @@ for rodadas in range (rodadas, tentativas + 1):
 
     if (acertou):
     # Possui a opção de digitar os if e else elif sem usar os (), tanto que foi utilizado os dois modelos para relembrar essa informação
-        print("*********************************")
-        print("**** Você acertou!  PARABÉNS ****")
-        print("*********************************")
+        print("*****************************************************")
+        print("************** Você acertou!  PARABÉNS **************")
+        print("*****************************************************")
         break
     else:
         if maior:
             print("Você errou! O seu chute é maior que o numero sorteado")
+            print("************** ESCOLHA UM NÚMERO MENOR **************")
         elif menor:
             print("Você errou! O seu chute é menor que o numero sorteado")
+            print("************** ESCOLHA UM NÚMERO MAIOR **************")
             print("*****************************************************")
     # rodadas = rodadas + 1
 
