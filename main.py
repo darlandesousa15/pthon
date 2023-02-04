@@ -1,9 +1,11 @@
+import random
+# o random.random é para gerar um numero aleatório
+
 print("*********************************")
 print("Bem vindo ao jogo, vamos jogar ?!")
 print("*********************************")
-import random
+
 numero_random = random.random() * 100
-# o random.random é para gerar um numero aleatório
 numero_chutado = round(numero_random)
 tentativas = 8
 rodadas = 1
