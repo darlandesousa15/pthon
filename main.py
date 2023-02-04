@@ -7,9 +7,20 @@ print("Bem vindo ao jogo, vamos jogar ?!")
 print("*********************************")
 
 numero_chutado = random.randrange(1, 101)
-tentativas = 8
+tentativas = 0
 rodadas = 1
 
+print("Qual dificuldade?")
+print("(1) facil (2) medio e (3) dificil")
+
+dificuldade = int(input("Escreva uma dificuldade"))
+
+if (dificuldade == 1):
+    tentativas = 10
+elif (dificuldade == 2):
+    tentativas = 7
+else:
+    tentativas = 5
 # while (rodadas <= tentativas):
 for rodadas in range (rodadas, tentativas + 1):
 # O while e o incrementador de rodadas está comentado para utilizar o for
