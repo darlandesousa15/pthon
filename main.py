@@ -58,6 +58,8 @@ for rodadas in range (rodadas, tentativas + 1):
         if maior:
             print("Você errou! O seu chute é maior que o numero sorteado")
             print("************** ESCOLHA UM NÚMERO MENOR **************")
+            if (rodadas == tentativas):
+                print("*** O número secreto era {}. Você fez {} ***".format(numero_chutado, pontos))
         elif menor:
             print("Você errou! O seu chute é menor que o numero sorteado")
             print("************** ESCOLHA UM NÚMERO MAIOR **************")
