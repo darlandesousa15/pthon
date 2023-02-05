@@ -9,6 +9,7 @@ print("*********************************")
 numero_chutado = random.randrange(1, 101)
 tentativas = 0
 rodadas = 1
+pontos = 1000
 
 print("Qual dificuldade?")
 print("(1) facil (2) medio e (3) dificil")
