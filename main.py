@@ -62,6 +62,9 @@ for rodadas in range (rodadas, tentativas + 1):
             print("Você errou! O seu chute é menor que o numero sorteado")
             print("************** ESCOLHA UM NÚMERO MAIOR **************")
             print("*****************************************************")
+        pontos_perdidos = abs(numero_chutado - chute)
+        #abs() é o um número absoluto, nessa utilização caso o resultado seja negativos com o abs ele sempre ficara positivo
+        pontos = pontos - pontos_perdidos
     # rodadas = rodadas + 1
 
 print("Jogo encerrado o número sorteado foi ", numero_chutado)
