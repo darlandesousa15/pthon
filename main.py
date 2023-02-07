@@ -70,3 +70,5 @@ def jogar ():
         # rodadas = rodadas + 1
 
     print("Jogo encerrado o número sorteado foi ", numero_chutado)
+if (__name__ == "__main__"):
+    jogar()
