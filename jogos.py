@@ -16,7 +16,6 @@ def escolhe_jogo():
     elif (jogo == 2):
         main.jogar()
 
-    print("FIM!")
 
 if (__name__ == "__main__"):
     escolhe_jogo()
