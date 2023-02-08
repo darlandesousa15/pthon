@@ -1,4 +1,5 @@
 import random
+import jogos
 # o random.random é para gerar um numero aleatório
 # o random.randrange (x, y) é para gerar um numero aleatório do valor x ao y, mas o valor do y vai ser 1 a menos
 def jogar ():
@@ -70,10 +71,12 @@ def jogar ():
         # rodadas = rodadas + 1
 
     print("Jogo encerrado o número sorteado foi ", numero_chutado)
-    print("Gostaria de jogar novamente ? (1) Sim (2) Não")
+    print("Gostaria de jogar novamente ? (1) Sim (2) Não (3) Voltar a seleção de jogos")
     replay = input("Digite sua escolha. ")
     if (replay == "1"):
         jogar()
+    elif (replay == "3"):
+        jogos.escolhe_jogo()
     else:
         print("*** Fim de Jogo ***")
 
