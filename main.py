@@ -14,7 +14,7 @@ def jogar ():
     print("Qual dificuldade?")
     print("(1) facil (2) medio e (3) dificil")
 
-    dificuldade = int(input("Escreva uma dificuldade"))
+    dificuldade = int(input("Escreva uma dificuldade "))
 
     if (dificuldade == 1):
         tentativas = 10
@@ -70,5 +70,8 @@ def jogar ():
         # rodadas = rodadas + 1
 
     print("Jogo encerrado o número sorteado foi ", numero_chutado)
+    print("Gostaria de jogar novamente ? (1) Sim (2) Não")
+    replay = ("Digite sua escolha. ")
+
 if (__name__ == "__main__"):
     jogar()
