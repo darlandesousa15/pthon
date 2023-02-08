@@ -71,7 +71,11 @@ def jogar ():
 
     print("Jogo encerrado o número sorteado foi ", numero_chutado)
     print("Gostaria de jogar novamente ? (1) Sim (2) Não")
-    replay = ("Digite sua escolha. ")
+    replay = input("Digite sua escolha. ")
+    if (replay == "1"):
+        jogar()
+    else:
+        print("*** Fim de Jogo ***")
 
 if (__name__ == "__main__"):
     jogar()
